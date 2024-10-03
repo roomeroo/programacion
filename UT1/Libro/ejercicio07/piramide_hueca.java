@@ -6,7 +6,7 @@ public class piramide_hueca {
         int i, j, size;
         i = 1;
         j = 0;
-        size = 9;
+        size = 12;
         while(i < ((size+ 1) / 2) + 1)
         {
             while(j < ((size + 1) / 2) - i)
