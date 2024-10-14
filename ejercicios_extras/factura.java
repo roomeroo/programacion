@@ -19,7 +19,7 @@ public class factura
         Float precio1 = s.nextFloat();
         System.out.print("\nIngrese la cantidad comprada del primer producto: ");
         int cantidad1 =  s.nextInt();
-        s.next();
+        s.nextLine(); // LIMPIAMOS EL BUFFER
         
         System.out.print("\nIngrese el nombre del segundo producto: ");
         String producto2 = s.nextLine();
@@ -27,14 +27,15 @@ public class factura
         Float precio2 = s.nextFloat();
         System.out.print("\nIngrese la cantidad comprada del segundo producto: ");
         int cantidad2 =  s.nextInt();
+        s.nextLine(); // LIMPIAMOS EL BUFFER
         
         System.out.print("\nIngrese el nombre del tercer producto: ");
         String producto3 = s.nextLine();
         System.out.print("\nIngrese el precio unitario del tercer producto: ");
         Float precio3 = s.nextFloat();
-
         System.out.print("\nIngrese la cantidad comprada del tercer producto: ");
         int cantidad3 =  s.nextInt();
+            s.nextLine(); // LIMPIAMOS EL BUFFER
 
         System.out.print("-------------------------------\n");
         System.out.print("            FACTURA\n");
@@ -46,10 +47,9 @@ public class factura
 
         System.out.print("Producto       Precio Unitario  Cantidad  Total Parcial");
         System.out.print("\n-------------------------------------------------------");
-        System.out.printf("\n%s               %2f                %d         %2f     ", producto1 , precio1, cantidad1,precio1 * cantidad1 );
-        System.out.printf("\n%s               %2f                %d         %2f     ", producto2 , precio2, cantidad2,precio2 * cantidad2 );
-        System.out.printf("\n%s               %2f                %d         %2f     ", producto3 , precio3, cantidad3,precio3 * cantidad3 );
-
+        System.out.printf("\n%-15s  %-15.2f %-10d    %-15.2f     ", producto1 , precio1, cantidad1,precio1 * cantidad1 );
+        System.out.printf("\n%-15s  %-15.2f %-10d    %-15.2f     ", producto2 , precio2, cantidad2,precio2 * cantidad2 );
+        System.out.printf("\n%-15s  %-15.2f %-10d    %-15.2f     ", producto3 , precio3, cantidad3,precio3 * cantidad3 );
 
         s.close();
     }

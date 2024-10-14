@@ -10,5 +10,6 @@ public class ejercicio09
         System.out.print("\nDime la altura del cono: ");
         float h = s.nextFloat();
         System.out.printf("\nEl volumen del cono es %.3f m2.", (((3.1415 / 3) * (r * r) * h)));
+        s.close();
     }
 }
