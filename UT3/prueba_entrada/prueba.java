@@ -12,17 +12,19 @@ public class prueba
         System.out.println("El cuadrado de "+ i + " es: " + i*i + ".");
         System.out.print("Ahora lo realizaremos con la clase Scanner, Introduzca un numero: ");
         i = a.nextInt();
-        System.out.println("\nEl cuadrado de" + i + " es: " + i*i + " \u8341.");*/
+        System.out.println("\nEl cuadrado de" + i + " es: " + i*i + " \u8341.")
 
         
       
-        int num = Integer.parseInt(a.next());
-        if(!a.hasNext())
-        {
-            a.next();
-            System.out.println("\nhubo problema");
-        }
+        int num = a.nextInt();
+        a.nextLine();
+
         System.out.println(" " + num);
-        a.close();
+        System.out.println('%');        */
+        String picha = "ME CAGO EN TODO";
+        picha = picha.toLowerCase(  );
+        System.out.println(picha);
+        picha = picha.toUpperCase();
+        System.out.println(picha);
     }
 }
