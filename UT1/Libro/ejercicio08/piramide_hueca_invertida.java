@@ -1,4 +1,4 @@
-package programacion.UT1.Libro.ejercicio08;
+package UT1.Libro.ejercicio08;
 
 public class piramide_hueca_invertida {
     public static void main(String[] arguments)

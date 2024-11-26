@@ -1,4 +1,4 @@
-package programacion.ejercicios_extras;
+package ejercicios_extras;
 import java.util.Scanner;
 public class factura
 {

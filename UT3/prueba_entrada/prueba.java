@@ -1,4 +1,4 @@
-package programacion.UT3.prueba_entrada;
+package UT3.prueba_entrada;
 import java.util.Scanner;
 public class prueba
 {

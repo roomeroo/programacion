@@ -1,4 +1,4 @@
-package programacion.UT5.ejercicio07;
+package UT5.ejercicio07;
 public class ejercicio07 {
     public static void main(String[] arguments){
         int pass = 1234;

@@ -1,4 +1,4 @@
-package programacion.UT5.ejercicio38;
+package UT5.ejercicio38;
 
 public class ejercicio38 {
     public static void main(String[] arguments) {
@@ -6,7 +6,6 @@ public class ejercicio38 {
         int altura = Integer.parseInt(System.console().readLine());
         int i = 0;
         int j = 0;
-        int mid= (altura/2) + 1;
         while (i < altura) {
             j = 0;
             if (i <= (altura / 2)) {

@@ -1,4 +1,4 @@
-package programacion.UT3.libro.ejercicio05;
+package UT3.libro.ejercicio05;
 
 import java.util.Scanner;
 

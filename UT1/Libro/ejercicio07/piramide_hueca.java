@@ -1,4 +1,4 @@
-package programacion.UT1.Libro.ejercicio07;
+package UT1.Libro.ejercicio07;
 
 public class piramide_hueca {
     public static void main(String[] arguments)
@@ -6,7 +6,7 @@ public class piramide_hueca {
         int i, j, size;
         i = 1;
         j = 0;
-        size = 12;
+        size = 17;
         while(i < ((size+ 1) / 2) + 1)
         {
             while(j < ((size + 1) / 2) - i)

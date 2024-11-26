@@ -1,4 +1,4 @@
-package programacion.UT1.Colores;
+package UT1.Colores;
 public class Colores {
     public static void main(String[] args) throws Exception {
         System.out.print("\033[33m mandarina");

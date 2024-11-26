@@ -1,4 +1,4 @@
-package programacion.colors;
+package colors;
 public class consoleColors {
     // Reset
     public static final String RESET = "\033[0m";  // Text Reset

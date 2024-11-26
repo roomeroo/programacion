@@ -1,4 +1,4 @@
-package programacion.UT1.Libro.ejercicio04;
+package UT1.Libro.ejercicio04;
 
 public class horario
 {
