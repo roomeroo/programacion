@@ -1,4 +1,4 @@
-package programacion.UT2.libro.ejercicio01;
+package UT2.libro.ejercicio01;
 
 public class ejercicio01
 {

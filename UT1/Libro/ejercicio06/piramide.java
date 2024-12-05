@@ -1,4 +1,4 @@
-package programacion.UT1.Libro.ejercicio06;
+package UT1.Libro.ejercicio06;
 
 public class piramide {
     public static void main(String[] arguments)

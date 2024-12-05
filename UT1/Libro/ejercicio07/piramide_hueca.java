@@ -1,4 +1,4 @@
-package programacion.UT1.Libro.ejercicio07;
+package UT1.Libro.ejercicio07;
 
 public class piramide_hueca {
     public static void main(String[] arguments)

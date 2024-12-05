@@ -1,4 +1,4 @@
-package programacion.UT5.ejercicio24;
+package UT5.ejercicio24;
 
 public class ejercicio24 {
     public static void main(String[] args) {

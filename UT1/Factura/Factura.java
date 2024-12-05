@@ -1,4 +1,4 @@
-package programacion.UT1.Factura;
+package UT1.Factura;
 
 public class Factura 
 {

@@ -1,5 +1,5 @@
 //CONTADOR DE NUMEROS + Y-
-package programacion.UT5.ejercicio13;
+package UT5.ejercicio13;
 
 public class ejercicio13 {
     public static void main(String[] arguments){

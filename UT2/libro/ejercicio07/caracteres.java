@@ -1,4 +1,4 @@
-package programacion.UT2.libro.ejercicio07;
+package UT2.libro.ejercicio07;
 public class caracteres 
 {    
     public static void main(String[] arguments)

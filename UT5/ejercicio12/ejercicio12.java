@@ -1,4 +1,4 @@
-package programacion.UT5.ejercicio12;
+package UT5.ejercicio12;
 public class ejercicio12 {
     public static void main(String[] arguments){
         long primero, segundo, temporal, fibonacci;

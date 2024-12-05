@@ -1,4 +1,4 @@
-package programacion.UT5.ejercicio04;
+package UT5.ejercicio04;
 
 public class ejercicio04 {
     public static void main(String[] arguments){
