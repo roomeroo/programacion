@@ -1,4 +1,4 @@
-package UT6.ejercicio26;
+package ejercicio26;
 
 public class TablaChocolate {
     public static void main(String[] arguments){

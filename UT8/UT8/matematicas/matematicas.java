@@ -93,9 +93,10 @@ public class matematicas {
     }
 
     public static long trozoDeUnNumero(long num, int inicio, int fin){
-        long numero = 0;
- 
-        return (numero);
+        num = quitarPorDetras(num, numLen(num)-fin - 1);
+        num = quitarPorDelante(num, inicio);
+
+        return (num);
     }
 
     public static long juntarNumeros(long num1, long num2){
@@ -103,6 +104,6 @@ public class matematicas {
     }
 
     public static void main(String[] arguments){
-        System.out.println(juntarNumeros(345, 12));
+        System.out.println(esCapicua(12321));
     }
 }
