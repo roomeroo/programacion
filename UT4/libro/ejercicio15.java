@@ -13,6 +13,7 @@ public class ejercicio15
             direccion = s.next();
 
         }while(!direccion.equals("izquierda") && !direccion.equals("derecha") && !direccion.equals("abajo") && !direccion.equals("abajo"));
+        s.close();
     }
 
 

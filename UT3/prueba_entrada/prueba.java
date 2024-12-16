@@ -26,5 +26,6 @@ public class prueba
         System.out.println(picha);
         picha = picha.toUpperCase();
         System.out.println(picha);
+        a.close();
     }
 }
