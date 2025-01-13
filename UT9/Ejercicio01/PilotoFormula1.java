@@ -1,4 +1,4 @@
-package UT9.Ejercicio01;
+package Ejercicio01;
 
 public class PilotoFormula1 {
     int edad = 0;

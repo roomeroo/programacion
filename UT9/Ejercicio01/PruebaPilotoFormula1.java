@@ -1,4 +1,4 @@
-package UT9.Ejercicio01;
+package Ejercicio01;
 
 public class PruebaPilotoFormula1 {
     public static void main(String[] args){
