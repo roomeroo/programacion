@@ -5,11 +5,11 @@
 En este prototipo de examen he realizado 4 funciones en la clase cadenasTexto.
 
 ## Índice de funciones
-1. [contadorVocales.]()
-2. [revString.]()
-3. [quitarEspacios.]()
-4. [esPalindromo.]()
-5. Ejemplo de ejecución.
+1. [contadorVocales.](#contar-vocales)
+2. [revString.](#dar-la-vuelta-al-string)
+3. [quitarEspacios.](#quitar-espacios)
+4. [esPalindromo.](#es-palindromo)
+5. [Ejemplo de ejecución.](#ejemplo-de-ejecucion)
 
 ## Y en la clase pruebaCadenaTexto, es donde estara el programa principal donde llamaremos las funciones para probarlas.
 
