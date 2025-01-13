@@ -1,18 +1,42 @@
-## Getting Started
+# PROTOTIPO EXAMEN PROGRAMACIÓN.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Estamos ante un prototipo de examen de funciones.
 
-## Folder Structure
+En este prototipo de examen he realizado 4 funciones en la clase cadenasTexto.
 
-The workspace contains two folders by default, where:
+## Índice de funciones
+1. [contadorVocales.]()
+2. [revString.]()
+3. [quitarEspacios.]()
+4. [esPalindromo.]()
+5. Ejemplo de ejecución.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Y en la clase pruebaCadenaTexto, es donde estara el programa principal donde llamaremos las funciones para probarlas.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+***
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Contar vocales.
+Esta función tendra el propósito de **contar las vocales** del string que se mande como parámetro.
 
-## Dependency Management
+## Dar la vuelta al string.
+Esta función tendra el propósito de **dar la vuelta** al string.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Quitar espacios.
+Esta función tendra el propósito de **quitar los espacios en blanco dentro del string** de manera que dejara solo los carácteres distintos al espacio.
+
+## ¿Es palindromo?
+
+Esta función se encargará de devolver un valor booleano **si es palindromo o no**, usando funciones anteriores, osea que devolverá true solo si el string es igual al string al revés.
+
+***
+
+## Ejemplo de ejecucion
+En la función main de la clase pruebaCadenaTexto.java, llamaremos a la función es palindromo de esta manera:
+
+```java
+System.out.println(CadenasTexto.esPalindromo("l o l"));
+```
+
+Y en este caso debería devolvernos el valor True.
+
+
