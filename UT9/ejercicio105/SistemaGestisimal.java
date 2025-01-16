@@ -5,9 +5,9 @@ public class SistemaGestisimal {
         Producto productos[] = new Producto[100];
         System.out.println("Bienvenido a tu sistema de gestion de confianza.");
         int option = -1;
-        productos[0] = new Producto("Gráfica", 18, 280, 200);
-        productos[1] = new Producto("disco m.2", 3, 50, 20);
-        productos[2] = new Producto("teclado", 54, 20, 14);
+        productos[0] = new Producto("Gráfica", 18,5, 280, 200);
+        productos[1] = new Producto("disco m.2", 3, 5, 50, 20);
+        productos[2] = new Producto("teclado", 54, 5, 20, 14);
         do{
         System.out.println("Seleccione que quiere hacer:");
         System.out.println("1. Listar productos.");
@@ -46,6 +46,7 @@ public class SistemaGestisimal {
         }
         System.out.println("Pulse intro para continuar.");
         System.console().readLine();
+        utils.borrarConsola();
         } while(option >0 && option < 7);
     }
 }

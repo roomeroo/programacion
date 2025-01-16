@@ -3,11 +3,13 @@ package ejercicio105;
 public class Producto {
     private String nombre;
     private int cantidad;
-    double precioVenta;
-    double precioCompra;
+    private int stock;
+    private double precioVenta;
+    private double precioCompra;
 
-    Producto(String nombre, int cantidad, double precioVenta, double precioCompra){
+    Producto(String nombre, int stock, int cantidad, double precioVenta, double precioCompra){
         this.nombre = nombre;
+        this.stock = stock;
         this.cantidad = cantidad;
         this.precioVenta = precioVenta;
         this.precioCompra = precioCompra;
@@ -16,8 +18,8 @@ public class Producto {
     public void setNombre(String nombre){
         this.nombre = nombre;
     }
-    public void setCantidad(int cantidad){
-        this.cantidad += cantidad;
+    public void setStock(int stock){
+        this.stock += stock;
     }
 
     public void setPrecioVenta(double precioVenta){
@@ -28,12 +30,16 @@ public class Producto {
         this.precioCompra = precioCompra;
     }
 
-    public int getCantidad(){
-        return (cantidad);
+    public int getStock(){
+        return (stock);
     }
 
-    public double getprevioCompra(){
+    public double getprecioCompra(){
         return (precioCompra);
+    }
+
+    public double getprecioVenta(){
+        return (precioVenta);
     }
 
     public String getNombre(){
@@ -41,6 +47,6 @@ public class Producto {
     }
 
     public String toString(){
-        return(nombre + ", tenemos " + cantidad + " en stock.");
+        return(nombre + ", tenemos " + stock + " en stock, y " +  (cantidad) + " en almacen.");
     }
 }

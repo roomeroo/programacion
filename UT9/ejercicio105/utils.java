@@ -1,6 +1,11 @@
 package ejercicio105;
 
 public class utils {
+
+    public static void borrarConsola(){
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+    }
     public static Producto buscarObjeto(Producto str[], String nombreProducto){
         nombreProducto = minusculas(nombreProducto);
         for(int i = 0; i < str.length && str[i] != null; i++){
@@ -26,25 +31,29 @@ public class utils {
         System.out.print("Dime que producto deseas comprar: ");
         String nombre = System.console().readLine();
         int cantidad = -1;
+        int stock = 0;
         if(buscarObjeto(str, nombre) != null){
-            System.out.println("Este producto consta de " + buscarObjeto(str, nombre).getCantidad());  
+            System.out.println("Este producto consta de " + buscarObjeto(str, nombre).getStock());  
             System.out.print("Cuanto quieres comprar: ");
             cantidad = Integer.parseInt(System.console().readLine());
-            buscarObjeto(str, nombre).setCantidad(cantidad);         //AÑADE LA CANTIDAD 
+            buscarObjeto(str, nombre).setStock(cantidad);         //AÑADE LA CANTIDAD 
         }else{
             System.out.println("Ese producto no existe o ha sido mal escrito.");
             System.out.println("¿Desea crear uno?");
             String respuesta = System.console().readLine();
             if((respuesta.toLowerCase()).equals("si")){
-                System.out.print("Cuanto quieres comprar: ");
+                System.out.print("Cuanto productos quieres comprar: ");
+                stock = Integer.parseInt(System.console().readLine());
+                System.out.print("Cuantos de ellos quieres añadir al almacen: ");
                 cantidad = Integer.parseInt(System.console().readLine());
+                stock = stock - cantidad;
                 System.out.println("Cuanto cuesta el producto");
-                double precioCompra = Integer.parseInt(System.console().readLine());
+                double precioCompra = Double.parseDouble(System.console().readLine());
                 System.out.println("¿Cual es el precio de venta?");
-                int precioVenta = Integer.parseInt(System.console().readLine());
+                double precioVenta = Double.parseDouble(System.console().readLine());
                 int pos = buscarUltima(str);
                 System.out.println(pos);
-                str[pos] = new Producto(nombre, cantidad, precioCompra, precioVenta);
+                str[pos] = new Producto(nombre, stock, cantidad, precioCompra, precioVenta);
             }
 
 
@@ -63,11 +72,11 @@ public class utils {
         String nombre = System.console().readLine();
         int cantidad = -1;
         if(buscarObjeto(str, nombre) != null){
-            System.out.println("Este producto consta de " + buscarObjeto(str, nombre).getCantidad());  
+            System.out.println("Este producto consta de " + buscarObjeto(str, nombre).getStock());  
             System.out.print("Cuanto quieres vender: ");
             cantidad = Integer.parseInt(System.console().readLine());
-            if(cantidad <= buscarObjeto(str, nombre).getCantidad()){
-                buscarObjeto(str, nombre).setCantidad(cantidad * (- 1));          //AÑADE LA CANTIDAD 
+            if(cantidad <= buscarObjeto(str, nombre).getStock()){
+                buscarObjeto(str, nombre).setStock(cantidad * (- 1));          //AÑADE LA CANTIDAD 
             }System.out.println("Lo sentimos, no tenemos stock suficiente.");
         }else{
             System.out.println("Ese producto no existe o ha sido mal escrito.");
