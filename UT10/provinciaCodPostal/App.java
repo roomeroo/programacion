@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args){
-        HashMap<String,ArrayList> lista = new HashMap<String, ArrayList>();
+        HashMap<String,ArrayList<Integer>> lista = new HashMap<>();
         Utils.inicializarBaseDatos(lista);
         int option = 1;
         while(option != 5){
@@ -16,7 +16,25 @@ public class App {
             System.out.println("5. Salir.");
             System.out.print("Eleccion: ");
             option = Integer.parseInt(System.console().readLine());
+
+            switch (option) {
+                case 1:
+                    Utils.añadirProvincia(lista);
+                    break;
             
+                case 2:
+                    Utils.añadirCodigoPostal(lista);
+                    break;
+                case 3:
+                    Utils.borrarProvincia(lista);
+                    break;
+                case 4:
+                    Utils.borrarCodigoPostal(lista);
+                    break;
+                case 5:
+                    break;
+            }
+            System.console().readLine();
         }
 
         System.out.println(lista);
