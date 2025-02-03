@@ -22,15 +22,15 @@ public class SistemaSupermercado{
                     factura.add(new lineaPedido(strEntrada, intEntrada, lista.get(strEntrada)));
             }
         }
-        System.out.println("Producto    Precio  Cantidad    Subtotal");
-        System.out.println("-----------------------------------------------");
+        System.out.printf("%10s     %5s    %5s   %10s\n", "Producto", "Precio", "Cantidad", "Subtotal");
+        System.out.println("-------------------------------------------------");
         double total = 0.0;
         for(int i = 0; i < factura.size(); i++){
-            System.out.print(factura.get(i).getNombre() + "        " + factura.get(i).getPrecio() + "         " + factura.get(i).getCantidad() + "          " + factura.get(i).getCantidad() * factura.get(i).getPrecio());
+            System.out.printf("  %-10s     %5.2f     %5d     %10.2f€", factura.get(i).getNombre(),factura.get(i).getPrecio(),factura.get(i).getCantidad(),factura.get(i).getCantidad() * factura.get(i).getPrecio());
             total += factura.get(i).getCantidad() * factura.get(i).getPrecio();
             System.out.println();
         }
-        System.out.println("-----------------------------------------------");
+        System.out.println("-------------------------------------------------");
         System.out.println("Total: " + total);
     }
 }

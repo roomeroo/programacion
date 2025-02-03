@@ -33,6 +33,8 @@ public class App {
                     break;
                 case 5:
                     break;
+                default:
+                    break;
             }
             System.console().readLine();
         }

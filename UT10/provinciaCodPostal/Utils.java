@@ -15,8 +15,8 @@ public class Utils {
             lista.get("Sevilla").add(41500);
             lista.get("Sevilla").add(41231);
         lista.put("Granada", new ArrayList<Integer>());
-            lista.get("Granada").add(18007);
-            lista.get("Granada").add(18220);
+            lista.get("Granada").add(072);
+            lista.get("Granada").add(012452);
     }
 
     public static void añadirProvincia(HashMap<String, ArrayList<Integer>> lista){
@@ -62,9 +62,9 @@ public class Utils {
             System.out.println("No la tenemos en carta.");
         }else{
             System.out.println("Que codigo postal quieres borrar");
-            Integer codPostal = Integer.parseInt(System.console().readLine());
+            int codPostal = Integer.parseInt(System.console().readLine());
             if(!lista.get(provincia).contains(codPostal)){
-                System.out.println("Me temo que no tenemos esa provincia en la base de datos");
+                System.out.println("Me temo que ese  codigo postal no esta en la base de datos");
             }else{
                 lista.get(provincia).remove(codPostal);
                 System.out.println("Codigo postal borrado");
