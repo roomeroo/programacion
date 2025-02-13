@@ -37,6 +37,6 @@ public class App {
                 System.out.println(ex.getMessage());
             }
         }
-        Socio socio = new Socio("julio", pedirEntero("estatura:"));
+
     }
 }

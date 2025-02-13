@@ -1,3 +1,5 @@
+package CRUD;
+
 import java.util.ArrayList;
 
 public interface CRUD<T> {

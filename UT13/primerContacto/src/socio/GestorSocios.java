@@ -1,3 +1,4 @@
+package socio;
 import java.sql.Connection;
 
 public class GestorSocios {

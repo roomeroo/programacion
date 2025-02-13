@@ -1,3 +1,4 @@
+package socio;
 public class Socio {
     private int socioID;
     private String nombre;

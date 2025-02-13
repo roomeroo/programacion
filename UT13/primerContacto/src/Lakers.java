@@ -1,4 +1,8 @@
 public class Lakers {
+    private String url = "jdbc:mariadb://localhost:3306/baloncesto";
+    private String usuario = "root";
+    private String contraseña = "";
+
     public static int pedirEntero(String mensaje){
         int numero;
         boolean correcto = false;
