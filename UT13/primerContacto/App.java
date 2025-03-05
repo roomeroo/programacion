@@ -1,9 +1,17 @@
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import src.socio.Socio;
 
 public class App {
+    /*
     public static void main(String[] args) throws Exception {
         String url = "jdbc:mariadb://localhost:3306/baloncesto";
         String usuario = "root";
@@ -39,4 +47,9 @@ public class App {
         }
 
     }
+        */
+        public static void main(String[] args) {
+            Lakers.requestAll();
+        }
 }
+       

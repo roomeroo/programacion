@@ -13,7 +13,8 @@ public class Socio {
         this.localidad = socio.getLocalidad();
     }
 
-    public Socio(String nombre, int estatura, int edad, String localidad){
+    public Socio(int socioID, String nombre, int estatura, int edad, String localidad){
+        this.socioID = socioID;
         this.nombre = nombre;
         this.estatura = estatura;
         this.edad = edad;
