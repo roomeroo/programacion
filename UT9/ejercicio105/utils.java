@@ -1,5 +1,6 @@
 package ejercicio105;
 
+
 public class utils {
 
     public static void borrarConsola(){
