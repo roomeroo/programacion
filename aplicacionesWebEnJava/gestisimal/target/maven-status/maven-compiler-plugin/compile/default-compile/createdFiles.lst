@@ -1,0 +1,8 @@
+com\mycompany\gestisimal\JakartaRestConfiguration.class
+pool\ConnectionPool.class
+com\mycompany\gestisimal\resources\JakartaEE11Resource.class
+productos\Producto.class
+usuario\Interactuador.class
+productos\GestorInventario.class
+Gestisimal.class
+crud\CRUD.class
